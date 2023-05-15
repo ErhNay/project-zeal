@@ -45,4 +45,112 @@ textarea {
 
 p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.overlay {
+  position: relative;
+  z-index: 9;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.header {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(5, 21, 28);
+  padding: 1rem 1.5rem;
+}
+.header__logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(252, 84, 26);
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: rgb(5, 21, 28);
+  padding: 2rem 4rem;
+  border: 0.2rem solid rgb(226, 226, 226);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  position: fixed;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%) translateY(5.5rem) scale(0);
+  transform-origin: bottom;
+  transition: transform 0.25s ease-in-out;
+  z-index: 10;
+}
+.header__nav a {
+  color: rgb(255, 255, 255);
+}
+.header__nav a:hover {
+  color: rgb(252, 84, 26);
+}
+.header .display-nav {
+  transform: translateX(50%) translateY(5.5rem) scale(1);
+  transform-origin: top;
+}
+.header__hamburger {
+  height: 1.5rem;
+  width: 3rem;
+  transform: rotate(-45deg);
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  top: 2rem;
+  right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  z-index: 11;
+}
+.header__hamburger:hover .line-1 {
+  width: 50%;
+}
+.header__hamburger:hover .line-3 {
+  width: 100%;
+}
+.header__hamburger div {
+  height: 0.3rem;
+  background-color: rgb(252, 84, 26);
+  transition: all 0.25s ease-in-out;
+}
+.header__hamburger .line-1 {
+  width: 100%;
+}
+.header__hamburger .line-2 {
+  width: 70%;
+}
+.header__hamburger .line-3 {
+  width: 50%;
+}
+.header .hamburger-toggled {
+  transform: rotate(0);
+}
+.header .hamburger-toggled:hover .line-1, .header .hamburger-toggled:hover .line-3 {
+  width: 75%;
+}
+.header .line-1-toggled {
+  transform: rotate(45deg) translateX(0.6rem) translateY(0.5rem);
+  width: 75%;
+}
+.header .line-2-toggled {
+  transform: scale(0);
+}
+.header .line-3-toggled {
+  transform: rotate(-45deg) translateX(0.4rem) translateY(-0.2rem);
+  width: 75%;
 }/*# sourceMappingURL=main.style.css.map */
