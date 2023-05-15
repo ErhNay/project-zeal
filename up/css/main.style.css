@@ -61,6 +61,45 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.padd {
+  padding: 5rem 2rem;
+}
+
+.link-hover {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.link-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(252, 84, 26);
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+}
+.link-hover:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.link-hover i {
+  transition: transform 0.25s ease-in-out;
+  transform: rotate(-45deg);
+}
+.link-hover:hover i {
+  transform: rotate(0);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -153,6 +192,35 @@ p {
 .header .line-3-toggled {
   transform: rotate(-45deg) translateX(0.4rem) translateY(-0.2rem);
   width: 75%;
+}
+
+.hero {
+  background-image: url("../images/hero-bg.jpg");
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hero__content div {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.hero__content--title {
+  font-size: 7rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-weight: 900;
+}
+.hero__content--title span:first-child {
+  display: block;
+  color: rgb(252, 84, 26);
+}
+.hero__content--link {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 500px) {
