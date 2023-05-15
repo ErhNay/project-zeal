@@ -153,4 +153,29 @@ p {
 .header .line-3-toggled {
   transform: rotate(-45deg) translateX(0.4rem) translateY(-0.2rem);
   width: 75%;
+}
+
+@media screen and (min-width: 500px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+  .header__nav {
+    flex-direction: row;
+    transform: scale(1);
+    position: static;
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+  }
+  .header__hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header {
+    padding: 1.5rem 4rem;
+  }
+  .header__nav a {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.style.css.map */
