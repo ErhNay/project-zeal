@@ -1,0 +1,15 @@
+@media screen and (min-width: 800px) {
+  // -------------------------------HERO
+  .hero__content {
+    flex-direction: row;
+    align-items: center;
+
+    & > div {
+      flex-basis: 60%;
+    }
+
+    &--title {
+      font-size: 12rem;
+    }
+  }
+}
