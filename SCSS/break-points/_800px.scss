@@ -1,4 +1,12 @@
 @media screen and (min-width: 800px) {
+  // -------------------------------UTILITY CLASSES
+
+  .sec-title {
+    span {
+      display: inline-block;
+      word-spacing: 2px;
+    }
+  }
   // -------------------------------HERO
   .hero__content {
     flex-direction: row;

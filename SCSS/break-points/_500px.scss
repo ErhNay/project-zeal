@@ -3,6 +3,11 @@
   .padd {
     padding: 5rem 4rem;
   }
+
+  .card-links-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
   // -------------------------------HEADER
   .header {
     padding: 1rem 2rem;
@@ -26,5 +31,10 @@
     span:first-child {
       display: inline;
     }
+  }
+
+  // -------------------------------TRAINER
+  .trainer__content--card {
+    gap: 4rem;
   }
 }
