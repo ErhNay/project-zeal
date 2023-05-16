@@ -67,7 +67,6 @@ p {
 
 .link-hover {
   padding: 1rem 2rem;
-  font-size: 2rem;
   align-self: flex-start;
   display: flex;
   align-items: center;
@@ -106,6 +105,54 @@ p {
 }
 .content-limit > div:first-child {
   max-width: 1400px;
+}
+
+.sec-title {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  word-spacing: -2px;
+  line-height: 1;
+}
+.sec-title span {
+  color: rgb(252, 84, 26);
+  display: block;
+}
+
+.sec-desc {
+  font-size: 2rem;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.card-desc {
+  font-size: 1.5rem;
+}
+
+.card-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.card-link {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+.card-link:last-child {
+  padding-left: 0;
+}
+.card-link:last-child:hover {
+  color: rgb(252, 84, 26);
+}
+.card-link:last-child::before {
+  display: none;
 }
 
 .header {
@@ -246,6 +293,34 @@ p {
 .hero__content--link {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
+}
+
+.trainer__content {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 4rem;
+}
+.trainer__content > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.trainer__content--link {
+  color: rgb(5, 21, 28);
+}
+.trainer__content--card {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  gap: 2rem;
+  background-image: url("../images/trainer-card-bg.jpg");
+  padding-bottom: 4rem;
+}
+.trainer__content--card__title, .trainer__content--card__desc,
+.trainer__content--card .card-links-container {
+  margin: 0 2rem;
+}
+.trainer__content--card__title, .trainer__content--card__desc {
+  color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width: 500px) {
