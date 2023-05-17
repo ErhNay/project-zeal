@@ -535,6 +535,16 @@ p {
     grid-row: 3/4;
     margin-bottom: 4rem;
   }
+  .about__content--trainer {
+    flex-direction: row;
+  }
+  .about__content--trainer__info {
+    flex-basis: 50%;
+    align-self: center;
+  }
+  .about__content--trainer:last-of-type {
+    flex-direction: row-reverse;
+  }
 }
 @media screen and (min-width: 1200px) {
   .sec-title {
