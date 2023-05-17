@@ -1,3 +1,6 @@
+@use '../general-styles/colors' as clr;
+@use '../general-styles/typography' as type;
+
 @media screen and (min-width: 500px) {
   // -------------------------------UTILITY CLASSES
   .padd {
@@ -36,5 +39,15 @@
   // -------------------------------TRAINER
   .trainer__content--card {
     gap: 4rem;
+  }
+
+  // -------------------------------FEATURES
+  .features__content--cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+
+    &__card:nth-child(2n + 1) {
+      border-left: 3px solid clr.clrs('clr-primary');
+    }
   }
 }

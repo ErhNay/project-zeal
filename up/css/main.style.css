@@ -382,6 +382,13 @@ p {
   .trainer__content--card {
     gap: 4rem;
   }
+  .features__content--cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, min-content);
+  }
+  .features__content--cards__card:nth-child(2n+1) {
+    border-left: 3px solid rgb(252, 84, 26);
+  }
 }
 @media screen and (min-width: 800px) {
   .sec-title span {
@@ -510,6 +517,10 @@ p {
   .trainer__content--card:nth-child(3) .trainer__content--card__desc,
   .trainer__content--card:nth-child(3) .card-links-container {
     grid-column: 1/5;
+  }
+  .features__content--cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, min-content);
   }
 }
 @media screen and (min-width: 1400px) {
