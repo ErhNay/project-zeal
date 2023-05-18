@@ -20,4 +20,14 @@
       font-size: 12rem;
     }
   }
+
+  // -------------------------------GALLERY
+  .gallery__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &--img:last-child {
+      grid-column: 1 / -1;
+    }
+  }
 }

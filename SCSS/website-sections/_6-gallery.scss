@@ -21,7 +21,7 @@
         grid-template-columns: repeat(2, max-content);
         gap: 0.5rem;
 
-        font-size: type.fs('mc');
+        font-size: type.fs('m');
         font-weight: type.fw('extra-bold');
         color: clr.clrs('clr-white');
         line-height: 1;
@@ -69,7 +69,7 @@
 
       @media (hover) {
         &::after {
-          // background: none;
+          // background: none; this works too
           background-color: rgba(0, 0, 0, 0);
         }
 
