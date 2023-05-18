@@ -535,6 +535,37 @@ p {
   background-color: rgb(238, 238, 238);
 }
 
+.testimonial__content {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 5rem;
+}
+.testimonial__content--info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.testimonial__content--info__rating {
+  display: flex;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.testimonial__content--info__rating i {
+  color: rgb(252, 84, 26);
+  font-size: 1.5rem;
+}
+.testimonial__content--info__text {
+  font-size: 2rem;
+}
+.testimonial__content--info__name {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.testimonial__content--info__program {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @media screen and (min-width: 500px) {
   .padd {
     padding: 5rem 4rem;
