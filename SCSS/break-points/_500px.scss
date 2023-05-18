@@ -50,4 +50,14 @@
       border-left: 3px solid clr.clrs('clr-primary');
     }
   }
+
+  // -------------------------------PRICING
+  .pricing {
+    &__content {
+      &--plans {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, min-content);
+      }
+    }
+  }
 }

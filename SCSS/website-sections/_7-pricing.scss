@@ -3,6 +3,7 @@
 
 .pricing {
   &__content {
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(2, min-content);
     gap: 5rem;
