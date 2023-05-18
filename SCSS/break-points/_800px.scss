@@ -1,3 +1,4 @@
+@use '../general-styles/typography' as type;
 @media screen and (min-width: 800px) {
   // -------------------------------UTILITY CLASSES
 
@@ -48,6 +49,50 @@
           margin-left: -1px;
           z-index: 1;
         }
+      }
+    }
+  }
+
+  // -------------------------------TESTIMONIALS
+  .testimonial {
+    &__content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, min-content);
+      gap: 0 4rem;
+
+      &--title {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+
+        span {
+          display: block;
+        }
+      }
+
+      &--info {
+        align-self: center;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+        &__rating {
+        }
+
+        &__text {
+          font-size: type.fs('mc');
+        }
+
+        &__name {
+          font-size: type.fs('m');
+        }
+
+        &__program {
+          font-size: type.fs('sc');
+        }
+      }
+
+      &--img {
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
       }
     }
   }

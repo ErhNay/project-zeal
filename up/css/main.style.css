@@ -640,6 +640,36 @@ p {
     margin-left: -1px;
     z-index: 1;
   }
+  .testimonial__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    gap: 0 4rem;
+  }
+  .testimonial__content--title {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .testimonial__content--title span {
+    display: block;
+  }
+  .testimonial__content--info {
+    align-self: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .testimonial__content--info__text {
+    font-size: 2.5rem;
+  }
+  .testimonial__content--info__name {
+    font-size: 2rem;
+  }
+  .testimonial__content--info__program {
+    font-size: 1.5rem;
+  }
+  .testimonial__content--img {
+    grid-column: 2/3;
+    grid-row: 2/-1;
+  }
 }
 @media screen and (min-width: 1000px) {
   .padd {
