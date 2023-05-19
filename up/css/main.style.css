@@ -566,6 +566,73 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.contact {
+  background-color: rgb(238, 238, 238);
+}
+.contact__content {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  gap: 5rem;
+}
+.contact__content--titles {
+  display: flex;
+  flex-direction: column;
+}
+.contact__content--info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact__content--info__number, .contact__content--info__address, .contact__content--info__working-hours {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.contact__content--info__number i, .contact__content--info__address i, .contact__content--info__working-hours i {
+  color: rgb(252, 84, 26);
+  font-size: 2rem;
+}
+.contact__content--info__number span, .contact__content--info__address span, .contact__content--info__working-hours span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contact__content--info__address > span, .contact__content--info__working-hours > span {
+  display: flex;
+  flex-direction: column;
+}
+.contact__content--form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgb(5, 21, 28);
+  padding: 2rem;
+}
+.contact__content--form input,
+.contact__content--form textarea {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+}
+.contact__content--form input,
+.contact__content--form select,
+.contact__content--form textarea {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  border-radius: 0;
+  width: 100%;
+}
+.contact__content--form select {
+  background-color: rgb(252, 84, 26);
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+}
+.contact__content--form button {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
 @media screen and (min-width: 500px) {
   .padd {
     padding: 5rem 4rem;
