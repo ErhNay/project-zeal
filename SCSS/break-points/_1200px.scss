@@ -47,4 +47,21 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, min-content);
   }
+
+  // -------------------------------CONTACT
+  .contact__content--info {
+    align-self: center;
+    &__number,
+    &__address,
+    &__working-hours {
+      i {
+        font-size: type.fs('l');
+      }
+
+      span {
+        font-size: type.fs('l');
+        font-family: 'Sarpanch', sans-serif;
+      }
+    }
+  }
 }
