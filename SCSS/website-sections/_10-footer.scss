@@ -1,0 +1,83 @@
+@use '../general-styles/colors' as clr;
+@use '../general-styles/typography' as type;
+
+.footer {
+  background-image: url('../images/footer-bg.jpg');
+  background-size: cover;
+
+  &__content {
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: repeat(5, min-content);
+    gap: 5rem;
+
+    &--logo {
+      color: clr.clrs('clr-primary');
+      font-size: type.fs('xxxl');
+    }
+
+    &--programs,
+    &--links,
+    &--newletter {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+
+        a {
+          color: clr.clrs('clr-white');
+        }
+      }
+    }
+
+    &--newletter {
+      gap: 2rem;
+
+      &__title {
+        font-size: type.fs('m');
+      }
+
+      fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        input {
+          border-bottom: 1px solid clr.clrs('clr-white');
+          border-radius: 0;
+          padding: 0.5rem 1rem;
+          color: clr.clrs('clr-white');
+        }
+      }
+    }
+
+    &--social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      p {
+        color: clr.clrs('clr-white');
+        font-size: type.fs('sc');
+      }
+
+      & > div {
+        display: flex;
+        gap: 2rem;
+
+        i {
+          color: clr.clrs('clr-white');
+          transition: all 0.25s ease-in-out;
+
+          &:hover {
+            color: clr.clrs('clr-primary');
+          }
+        }
+      }
+    }
+  }
+}

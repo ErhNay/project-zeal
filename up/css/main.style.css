@@ -47,6 +47,13 @@ p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+button {
+  color: white;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
 .overlay {
   position: relative;
   z-index: 9;
@@ -627,11 +634,70 @@ p {
   outline: none;
   border: none;
 }
-.contact__content--form button {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
+
+.footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+}
+.footer__content {
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+  gap: 5rem;
+}
+.footer__content--logo {
+  color: rgb(252, 84, 26);
+  font-size: 7rem;
+}
+.footer__content--programs, .footer__content--links, .footer__content--newletter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__content--programs ul, .footer__content--links ul, .footer__content--newletter ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.footer__content--programs ul a, .footer__content--links ul a, .footer__content--newletter ul a {
   color: rgb(255, 255, 255);
+}
+.footer__content--newletter {
+  gap: 2rem;
+}
+.footer__content--newletter__title {
+  font-size: 2rem;
+}
+.footer__content--newletter fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__content--newletter fieldset input {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  color: rgb(255, 255, 255);
+}
+.footer__content--social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__content--social p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+.footer__content--social > div {
+  display: flex;
+  gap: 2rem;
+}
+.footer__content--social > div i {
+  color: rgb(255, 255, 255);
+  transition: all 0.25s ease-in-out;
+}
+.footer__content--social > div i:hover {
+  color: rgb(252, 84, 26);
 }
 
 @media screen and (min-width: 500px) {
