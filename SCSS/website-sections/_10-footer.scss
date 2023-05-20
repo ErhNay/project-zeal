@@ -18,7 +18,7 @@
 
     &--programs,
     &--links,
-    &--newletter {
+    &--newsletter {
       display: flex;
       flex-direction: column;
       gap: 2rem;
@@ -34,7 +34,7 @@
       }
     }
 
-    &--newletter {
+    &--newsletter {
       gap: 2rem;
 
       &__title {
@@ -70,11 +70,15 @@
         gap: 2rem;
 
         i {
-          color: clr.clrs('clr-white');
+          color: clr.clrs('clr-primary');
+          padding: 0.6rem;
+          background-color: clr.clrs('clr-white');
+          border-radius: 50%;
           transition: all 0.25s ease-in-out;
 
           &:hover {
-            color: clr.clrs('clr-primary');
+            color: clr.clrs('clr-white');
+            background-color: clr.clrs('clr-primary');
           }
         }
       }
